@@ -67,6 +67,8 @@ function restart() {
     document.getElementById("score").innerText ="Score:" + index
     document.getElementById('error_div').innerHTML = "Error:" + 0;
     document.getElementById('text_input').disabled = false
+    document.getElementById('timer_div').innerHTML = "";
+
     clearInterval(interval);
     seconds_left = 11;
     interval = setInterval(timer, 1000);
